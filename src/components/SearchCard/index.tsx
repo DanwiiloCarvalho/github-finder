@@ -1,10 +1,12 @@
+import { InputSearch } from '../InputSearch';
 import './styles.css';
 
 export function SearchCard() {
     return (
         <section className='search'>
-            <h2>Busque por um usuário</h2>
+            <h2>Busque por um usuário:</h2>
             <p>Conheça seus melhores repositórios</p>
+            <InputSearch/>
         </section>
     )
 }

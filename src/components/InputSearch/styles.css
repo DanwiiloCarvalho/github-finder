@@ -1,0 +1,20 @@
+div.input-search {
+    display: flex;
+    gap: .5em;
+    height: 2rem;
+}
+
+div.input-search > input {
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    padding: 0 4px;
+}
+
+div.input-search > button {
+    width: 30px;
+    background-color: rgb(2, 2, 77);
+    color: rgb(201, 198, 198);
+    border: none;
+    border-radius: 4px;
+}
