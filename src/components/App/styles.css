@@ -1,0 +1,15 @@
+div.App {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(2, 2, 77);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App > h1 {
+    color: whitesmoke;
+    /* text-align: center;*/
+    padding: 1em 0px; 
+    font-size: 2.3em;
+}
