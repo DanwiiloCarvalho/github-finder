@@ -17,4 +17,5 @@ div.input-search > button {
     color: rgb(201, 198, 198);
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
