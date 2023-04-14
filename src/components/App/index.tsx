@@ -14,8 +14,10 @@ export interface IUser {
 export interface UserContext {
   githubUser: IUser;
   setGithubUser: (value: IUser) => void;
-  showResult: boolean;
-  setShowResult: (value: boolean) => void;
+  noResults: boolean;
+  setNoResults: (value: boolean) => void;
+  loaderActive: boolean;
+  setLoaderActive: (value: boolean) => void;
 }
 
 export const GithubUserContext = createContext<UserContext>({} as UserContext);
@@ -23,7 +25,8 @@ export const GithubUserContext = createContext<UserContext>({} as UserContext);
 
 export function App() {
   const [githubUser, setGithubUser] = useState<IUser>({} as IUser);
-  const [showResult, setShowResult] = useState<boolean>(false);
+  const [noResults, setNoResults] = useState<boolean>(false);
+  const [loaderActive, setLoaderActive] = useState<boolean>(false);
 
   /* useEffect(() => {
     async function getGithubUser() {
@@ -36,7 +39,7 @@ export function App() {
   }, []); */
 
   return (
-    <GithubUserContext.Provider value={{githubUser, setGithubUser, showResult, setShowResult}} >
+    <GithubUserContext.Provider value={{githubUser, setGithubUser, noResults, setNoResults, loaderActive, setLoaderActive}} >
       <div className="App">
         <h1>GitHub Finder</h1>
         <Container />
