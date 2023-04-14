@@ -1,0 +1,26 @@
+div.follow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.vertical-line {
+    height: 100%;
+    border: 1px solid rgba(182, 179, 179, 0.226);
+}
+
+div.follow h3 {
+    font-size: .9em;
+    color: whitesmoke;
+    padding: 5px 0;
+}
+
+div.amount {
+    background-color: rgb(10, 196, 196);
+    border-radius: 3px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
