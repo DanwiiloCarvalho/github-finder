@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { ResultCard } from '../ResultCard';
 import { SearchCard } from '../SearchCard';
 import { GithubUserContext, IUser } from '../App';
@@ -7,6 +7,7 @@ import './styles.css';
 
 export function Container() {
     const {githubUser, setGithubUser, noResults, setNoResults, loaderActive, setLoaderActive} = useContext(GithubUserContext);
+
 
     return (
         <main className='container'>

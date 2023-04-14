@@ -26,7 +26,7 @@ export function InputSearch() {
 
     return (
         <div className='input-search'>
-            <input type="text" placeholder='Digite o nome do usuário' onChange={(e) => setUserName(e.target.value)}/>
+            <input type="text" placeholder='Digite o nome do usuário' onChange={(e) => setUserName(e.target.value)} onKeyDown={(e) => e.key == 'Enter' ? fetchGithubUser(userName as string).catch(error => console.log(error.message)) : null}/>
             <button onClick={() => fetchGithubUser(userName as string).catch(error => console.log(error.message))}><GoSearch /></button>
         </div>
     )

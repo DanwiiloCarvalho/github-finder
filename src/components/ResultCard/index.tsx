@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { GithubUserContext, IUser } from '../App';
 import { FollowCard } from '../FollowCard';
 import './styles.css';
@@ -7,8 +7,8 @@ import { MdLocationOn } from 'react-icons/md';
 export function ResultCard() {
 
     const {githubUser, setGithubUser} = useContext(GithubUserContext);
-
-    return (
+    
+    return ( 
         <section className='result'>
             <div className="container">
                 <img className='avatar' src={githubUser.avatar_url} alt="avatar" />
