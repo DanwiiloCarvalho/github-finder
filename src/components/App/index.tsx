@@ -21,22 +21,11 @@ export interface UserContext {
 }
 
 export const GithubUserContext = createContext<UserContext>({} as UserContext);
-/* export const GithubUserContext = createContext<UserContext | null>(null); */
 
 export function App() {
   const [githubUser, setGithubUser] = useState<IUser>({} as IUser);
   const [noResults, setNoResults] = useState<boolean>(false);
   const [loaderActive, setLoaderActive] = useState<boolean>(false);
-
-  /* useEffect(() => {
-    async function getGithubUser() {
-      const userJson = await fetch("https://api.github.com/users/DanwiiloCarvalho")
-                              .then(response => response.json());
-      setGithubUser(userJson);
-    }
-
-    getGithubUser();
-  }, []); */
 
   return (
     <GithubUserContext.Provider value={{githubUser, setGithubUser, noResults, setNoResults, loaderActive, setLoaderActive}} >
