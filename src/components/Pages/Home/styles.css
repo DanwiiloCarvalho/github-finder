@@ -1,0 +1,37 @@
+main.container {
+    flex: 1;
+    width: 90%;
+    /* background-color: rgb(25, 38, 112); */
+}
+
+p.no-results {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.loader-icon {
+    /* margin-right: 7px; */
+    /* top: 2px; */
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, 50%);
+    animation: spin 1s infinite linear;
+    width: 80px;
+    height: 80px;
+}
+
+@keyframes spin {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+div.box-loader {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

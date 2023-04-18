@@ -2,6 +2,10 @@ import { createContext, useEffect, useState } from 'react';
 import { Container } from '../Container';
 import './styles.css';
 
+//Utilização das rotas
+import { RouterProvider } from 'react-router-dom';
+import { router } from '../Router';
+
 export interface IUser {
   id: number,
   login: string,
@@ -31,7 +35,8 @@ export function App() {
     <GithubUserContext.Provider value={{githubUser, setGithubUser, noResults, setNoResults, loaderActive, setLoaderActive}} >
       <div className="App">
         <h1>GitHub Finder</h1>
-        <Container />
+        {/* <Container /> */}
+        <RouterProvider router={router}/>
       </div>
     </GithubUserContext.Provider>
   )
