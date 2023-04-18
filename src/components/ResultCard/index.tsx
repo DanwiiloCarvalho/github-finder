@@ -3,6 +3,7 @@ import { GithubUserContext, IUser } from '../App';
 import { FollowCard } from '../FollowCard';
 import './styles.css';
 import { MdLocationOn } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 export function ResultCard() {
 
@@ -15,7 +16,8 @@ export function ResultCard() {
                 <p className='name'>{githubUser.login}</p>
                 <span><MdLocationOn className='location'/> {githubUser.location}</span>
                 <FollowCard />
-                <a href="">Ver melhores projetos</a>
+                {/* <a href="">Ver melhores projetos</a> */}
+                <Link to={`/repos/${githubUser.login}`}>Ver melhores projetos</Link>
             </div>
         </section>
     )
