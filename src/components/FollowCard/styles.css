@@ -24,3 +24,28 @@ div.amount {
     align-items: center;
     color: white;
 }
+
+
+@media screen and (min-width: 600px) {
+    
+    div.follow {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 992px) {
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+}
+
+@media screen and (min-width: 2560px) {
+    
+    
+}

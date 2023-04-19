@@ -1,6 +1,6 @@
 main.container {
     flex: 1;
-    width: 90%;
+    width: 80%;
     /* background-color: rgb(25, 38, 112); */
 }
 
@@ -34,4 +34,39 @@ div.box-loader {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+    
+    main.container {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+    main.container {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    main.container {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+    main.container {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    
+    main.container {
+        width: 20%;
+    }
 }
