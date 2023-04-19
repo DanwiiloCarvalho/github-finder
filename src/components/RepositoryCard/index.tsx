@@ -20,7 +20,7 @@ export function RepositoryCard(repo: Repository) {
                     <span className='number'>{repo.forks_count}</span>
                 </div>
             </div>
-            <Link to={repo.html_url}>Ver código<RiBookMarkFill className='bookmark'/></Link>
+            <Link target='_blank' to={repo.html_url}>Ver código<RiBookMarkFill className='bookmark'/></Link>
         </section>
     )
 }
