@@ -1,5 +1,4 @@
 import { createContext, useEffect, useState } from 'react';
-import { Container } from '../Container';
 import './styles.css';
 
 //Utilização das rotas
@@ -35,7 +34,6 @@ export function App() {
     <GithubUserContext.Provider value={{githubUser, setGithubUser, noResults, setNoResults, loaderActive, setLoaderActive}} >
       <div className="App">
         <h1>GitHub Finder</h1>
-        {/* <Container /> */}
         <RouterProvider router={router}/>
       </div>
     </GithubUserContext.Provider>

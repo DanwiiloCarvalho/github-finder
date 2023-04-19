@@ -43,3 +43,7 @@ a.back {
 a.back:hover {
     background-color: rgb(75, 16, 185);
 }
+
+p.empty-list {
+    text-align: center;
+}
