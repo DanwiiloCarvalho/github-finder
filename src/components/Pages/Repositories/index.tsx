@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './styles.css';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { RepositoryCard } from '../../RepositoryCard';
 import { BiLoaderCircle } from 'react-icons/bi';
 
@@ -43,7 +43,7 @@ export function Repositories() {
         <>
             <h2>Explore os respositórios do usuário: {login}</h2>
             {!(repos.length > 0) && <div className='box-loader'><BiLoaderCircle color='white' className='loader-icon'/></div>}
-            {(repos.length > 0) && <main className='container-repositories'>
+            {(repos.length > 0) && <><main className='container-repositories'>
                 <section className='repositories'>
                     {repos && repos.map(repo => <RepositoryCard key={Math.random()}
                                                                 name={repo.name}
@@ -52,7 +52,7 @@ export function Repositories() {
                                                                 forks_count={repo.forks_count}
                                                                 html_url={repo.html_url}/>)}
                 </section>
-            </main>}
+            </main><Link to={'/'} className='back'>Voltar</Link></>}
         </>
     )
 }

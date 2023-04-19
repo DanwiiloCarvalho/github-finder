@@ -9,7 +9,7 @@ export function RepositoryCard(repo: Repository) {
     return ( 
         <section className='repository-card'>
             <h3>{repo.name}</h3>
-            <p>&lt;/&gt; {repo.language}</p>
+            {repo.language && <p>&lt;/&gt; {repo.language}</p>}
             <div className="stars-forks">
                 <div className="stars">
                     <span className='icon'><AiOutlineStar/></span>
