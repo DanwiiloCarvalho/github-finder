@@ -1,4 +1,29 @@
-main.container > h2 {
+h2 {
     text-align: center;
     font-size: 1.2rem;
+}
+
+main.container-repositories {
+    background-color: rgb(45, 0, 128);
+    border-radius: 12px;
+    padding: 0.5rem 1.4rem;
+    margin: 1rem 0;
+    width: 90%;
+}
+
+/*Loader*/
+@keyframes spin {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+div.box-loader {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

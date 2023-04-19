@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import './styles.css';
 import { useParams } from 'react-router-dom';
+import { RepositoryCard } from '../../RepositoryCard';
+import { BiLoaderCircle } from 'react-icons/bi';
 
-interface Repository {
+export interface Repository {
     name: string;
     language: string;
     stargazers_count: number;
@@ -38,9 +40,19 @@ export function Repositories() {
     //console.log("Renderizou Repositories");
 
     return (
-        <main className='container'>
-            <h2>Explore os respositórios do usuário:</h2>
-            {repos ? repos.map(repo => repo.name) : null}
-        </main>
+        <>
+            <h2>Explore os respositórios do usuário: {login}</h2>
+            {!(repos.length > 0) && <div className='box-loader'><BiLoaderCircle color='white' className='loader-icon'/></div>}
+            {(repos.length > 0) && <main className='container-repositories'>
+                <section className='repositories'>
+                    {repos && repos.map(repo => <RepositoryCard key={Math.random()}
+                                                                name={repo.name}
+                                                                language={repo.language}
+                                                                stargazers_count={repo.stargazers_count}
+                                                                forks_count={repo.forks_count}
+                                                                url={repo.url}/>)}
+                </section>
+            </main>}
+        </>
     )
 }
