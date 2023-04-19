@@ -9,7 +9,7 @@ export interface Repository {
     language: string;
     stargazers_count: number;
     forks_count: number;
-    url: string;
+    html_url: string;
 }
 
 export function Repositories() {
@@ -50,7 +50,7 @@ export function Repositories() {
                                                                 language={repo.language}
                                                                 stargazers_count={repo.stargazers_count}
                                                                 forks_count={repo.forks_count}
-                                                                url={repo.url}/>)}
+                                                                html_url={repo.html_url}/>)}
                 </section>
             </main>}
         </>
