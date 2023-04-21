@@ -47,3 +47,24 @@ a.back:hover {
 p.empty-list {
     text-align: center;
 }
+
+
+@media screen and (min-width: 600px) {
+    
+    main.container-repositories {
+        max-width: fit-content;
+    }
+
+    section.repositories {
+        max-width: fit-content;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    section.repositories {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+    }
+}

@@ -61,8 +61,6 @@ export function Repositories() {
         });
     }, []);
 
-    console.log("Renderizou Repositories");
-
     return (
         <>
             {!repos && <div className='box-loader'><BiLoaderCircle color='white' className='loader-icon'/></div>}
