@@ -1,5 +1,6 @@
 {
   "name": "githubfinder",
+  "homepage": "https://danwiilocarvalho.github.io/github-finder/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
