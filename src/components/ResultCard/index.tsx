@@ -14,7 +14,7 @@ export function ResultCard() {
             <div className="container">
                 <img className='avatar' src={githubUser.avatar_url} alt="avatar" />
                 <p className='name'>{githubUser.login}</p>
-                <span><MdLocationOn className='location'/> {githubUser.location}</span>
+                {githubUser.location && <span><MdLocationOn className='location'/> {githubUser.location}</span>}
                 <FollowCard />
                 <Link to={`/repos/${githubUser.login}`}>Ver melhores projetos</Link>
             </div>
