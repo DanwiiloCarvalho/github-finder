@@ -47,6 +47,12 @@ div.container > a {
     align-items: center;
     color: aliceblue;
     padding: 23px 0px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+div.container > a:hover {
+    opacity: 1;
 }
 
 @media screen and (min-width: 600px) {
