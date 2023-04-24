@@ -77,7 +77,7 @@ export function Repositories() {
                                                                 html_url={repo.html_url}/>)}
                     {(repos.length === 0) && <p className='empty-list'>Lista de repositórios vazia</p>}
                 </section>
-            </main><Link to={'/'} className='back'>Voltar</Link></>}
+            </main><Link to={'/github-finder'} className='back'>Voltar</Link></>}
         </>
     )
 }

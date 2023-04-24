@@ -16,7 +16,7 @@ export function ResultCard() {
                 <p className='name'>{githubUser.login}</p>
                 {githubUser.location && <span><MdLocationOn className='location'/> {githubUser.location}</span>}
                 <FollowCard />
-                <Link to={`/repos/${githubUser.login}`}>Ver melhores projetos</Link>
+                <Link to={`/github-finder/repos/${githubUser.login}`}>Ver melhores projetos</Link>
             </div>
         </section>
     )
