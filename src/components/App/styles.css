@@ -5,6 +5,7 @@ div.App {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .App > h1 {
@@ -12,11 +13,4 @@ div.App {
     /* text-align: center;*/
     padding: 1em 0px; 
     font-size: 2.3em;
-}
-
-footer {
-    color: rgb(201, 198, 198);
-    font-size: .8rem;
-    text-align: center;
-    margin: 10px 0;
 }

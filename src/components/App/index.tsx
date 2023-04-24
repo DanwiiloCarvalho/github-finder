@@ -35,7 +35,6 @@ export function App() {
       <div className="App">
         <h1>GitHub Finder</h1>
         <RouterProvider router={router}/>
-        <footer>Desenvolvido por Danilo Carvalho</footer>
       </div>
     </GithubUserContext.Provider>
   )
