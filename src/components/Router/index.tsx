@@ -5,7 +5,7 @@ import { Repositories } from "../Pages/Repositories";
 
 export const router = createBrowserRouter([
     {
-        path: '/',
+        path: '/github-finder',
         element: <Home />,
         errorElement: <Error/>
     },
